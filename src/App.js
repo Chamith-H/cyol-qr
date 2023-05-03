@@ -6,18 +6,24 @@ function App() {
 
   const buttons = [
     {
-      title:"Download product brochure",
-      class:"col-12"
+      title:"Download the product brochure",
+      class:"col-12",
+      subClass:"Brochure",
+      navigater:""
     },
 
     {
-      title:"Download product brochure",
-      class:"col-6"
+      title:"Visit our website",
+      class:"col-6",
+      subClass:"Website",
+      navigater:"https://cyol.vercel.app/"
     },
 
     {
-      title:"Download product brochure",
-      class:"col-6"
+      title:"Product overview",
+      class:"col-6",
+      subClass:"Extra",
+      navigater:""
     },
   ]
 
@@ -28,18 +34,23 @@ function App() {
         </div>
 
         <div className="Navigations px-3 px-sm-5">
-            <div className="row g-2 pt-5">
+          <div className="Background mt-5">
+            <div className="row g-0 Align-Background">
                 {buttons.map((button) => (
                     <div className={button.class}>
-                        <Navbutton Button={button}/>
+                      <a href={button.navigater}>
+                        <Navbutton Button={button} Styler={button.subClass}/>
+                      </a>
                     </div>
                 ))}
+            </div>
+          </div>
 
-                <div className="Requesting mt-4 d-flex flex-column align-items-center">
+            <div className="Requesting mt-4 d-flex flex-column align-items-center">
                   <p className="text-center">Unlock the full potential of our product</p>
                   <a href="https://cyol.vercel.app/?request=1"><button>Request Demo</button></a>
-                </div>
             </div>
+            
         </div>
     </div>
   );
