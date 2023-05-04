@@ -34,7 +34,7 @@ function App() {
         </div>
 
         <div className="Navigations px-3 px-sm-5">
-          <div className="Background mt-5">
+          <div className="Background mt-3 mt-sm-5">
             <div className="row g-0 Align-Background">
                 {buttons.map((button) => (
                     <div className={button.class}>
