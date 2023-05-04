@@ -22,7 +22,7 @@ function App() {
     {
       title:"Product overview",
       class:"col-6",
-      subClass:"Extra",
+      subClass:"Overview",
       navigater:""
     },
   ]

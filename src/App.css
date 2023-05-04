@@ -58,17 +58,64 @@
 }
 
 .Align-Background {
-  background-color: rgba(0, 0, 0, 0.578);
+  background-color: rgba(0, 0, 0, 0.649);
+  transition: background-color 0.2s ease;
 }
 
 .Align-Background a {
   text-decoration: none;
 }
 
-.Brochure:hover {
-  background-color: #000000bf;
+.Brochure{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
 }
+
+.Website {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.Overview {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.Brochure:hover {
+  background-color: rgba(17, 79, 94, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+
+.Website:hover {
+  background-color: rgba(0, 125, 79, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+
+.Overview:hover {
+  background-color: rgba(247, 160, 47, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+
 
 .Requesting p {
   font-family:  'RobotoGeneral';
+}
+
+.Requesting button:hover {
+  background-color: rgb(0, 78, 49);
 }
